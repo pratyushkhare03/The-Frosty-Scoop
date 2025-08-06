@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "MyCustomFont";
+  /* src: url("/assets/fonts/myfont.woff2") format("woff2"), */
+       /* url("/assets/fonts/myfont.woff") format("woff"), */
+    src: url("/assets/fonts/Genty.ttf") format("truetype"),
+         url("/assets/fonts/Genty.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+}
+
+.image{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url(../images/cover.png) center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.txt{
+    height: 50vh;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.txt h1{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    line-height: 0.9;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-family: "MyCustomFont", sans-serif;
+}
+
+.nav{
+    height: 50vh;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.nav-card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.nav .nav-item{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: x-large;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.nav-item:hover{
+    background-color: rgb(214, 214, 214);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px){
+    .txt{
+        /* width: auto; */
+        height: max-content;
+    }
+}
