@@ -12,6 +12,11 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
     width: 100%;
 }
@@ -95,24 +100,52 @@
 .flavour{
     height: 100vh;
     width: 100%;
-    background-color: #b2a790;
-    color: white;
+    background-color: #f5f5ef;
+    color: black;
 }
+
 
 /* Seasonal Offer */
 .seasonal{
     height: 100vh;
     width: 100%;
-    background-color: #c85a52;
-    color: white;
+    background-color: #f5f5ef;
+    color: black;
 }
 
 /* About Us */
 .about{
     height: 100vh;
     width: 100%;
-    background-color: #c85a52;
-    color: white;
+    background-color: #f5f5ef;
+    color: black;
+
+}
+
+.about h1{
+    text-decoration: underline;
+    text-align: center;
+    line-height: 50px;
+}
+
+.about .cardbox{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about .cardbox .card{
+    height: 400px;
+    width: 400px;
+    background-color: #b4a13c;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.about .cardbox .card2{
+    margin: 0px 20px;
 }
 
 /* Contact Us */
@@ -122,4 +155,10 @@
     background-color: black;
     color: white;
 
+}
+
+.contact h1{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 700;
 }
